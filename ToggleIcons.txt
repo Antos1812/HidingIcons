@@ -1,35 +1,35 @@
-; Skrót Ctrl + Alt + ; do ukrywania ikon
+; Shortcut Ctrl + Alt + ; to hide icons
 ^!;::
-ToggleIcons := !ToggleIcons ; Przełączanie stanu
+ToggleIcons := !ToggleIcons ; Toggle the state
 
 If (ToggleIcons) {
-    ; Ukryj ikony
+    ; Hide icons
     RegWrite, REG_DWORD, HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced, HideIcons, 1
 } else {
-    ; Pokaż ikony
+    ; Show icons
     RegWrite, REG_DWORD, HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced, HideIcons, 0
 }
 
-; Restart Explorer, aby zmiany były natychmiastowe
-Run, taskkill /f /im explorer.exe ; Zatrzymuje Explorer
-Sleep, 1000 ; Czekaj 1 sekundę, aby Explorer zdążył się zamknąć
-Run, explorer.exe ; Uruchamia ponownie Explorer
+; Restart Explorer to apply changes immediately
+Run, taskkill /f /im explorer.exe ; Stop Explorer
+Sleep, 1000 ; Wait 1 second for Explorer to close
+Run, explorer.exe ; Restart Explorer
 return
 
-; Skrót Ctrl + Alt + ` (backtick) do ponownego pokazywania ikon
-^!`:: ; Skrót Ctrl + Alt + `
-ToggleIcons := !ToggleIcons ; Przełączanie stanu
+; Shortcut Ctrl + Alt + ` (backtick) to show icons again
+^!`:: ; Shortcut Ctrl + Alt + `
+ToggleIcons := !ToggleIcons ; Toggle the state
 
 If (ToggleIcons) {
-    ; Ukryj ikony
+    ; Hide icons
     RegWrite, REG_DWORD, HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced, HideIcons, 1
 } else {
-    ; Pokaż ikony
+    ; Show icons
     RegWrite, REG_DWORD, HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced, HideIcons, 0
 }
 
-; Restart Explorer, aby zmiany były natychmiastowe
-Run, taskkill /f /im explorer.exe ; Zatrzymuje Explorer
-Sleep, 1000 ; Czekaj 1 sekundę, aby Explorer zdążył się zamknąć
-Run, explorer.exe ; Uruchamia ponownie Explorer
+; Restart Explorer to apply changes immediately
+Run, taskkill /f /im explorer.exe ; Stop Explorer
+Sleep, 1000 ; Wait 1 second for Explorer to close
+Run, explorer.exe ; Restart Explorer
 return
