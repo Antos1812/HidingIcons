@@ -15,4 +15,6 @@ Press Ctrl + Alt + ; to hide or show the desktop icons.
 
 Press Ctrl + Alt + ` (backtick) to reset and ensure the icons are visible again.
 
+# Still working on second hotkey (Ctrl + Alt + ')
+
 
