@@ -1,5 +1,6 @@
 # Desktop Icon Toggle Script
-# This AutoHotkey script allows you to toggle the visibility of desktop icons with keyboard shortcuts. It modifies the system registry to hide or show icons and restarts Windows Explorer to apply the changes immediately.
+# This AutoHotkey script
+allows you to toggle the visibility of desktop icons with keyboard shortcuts. It modifies the system registry to hide or show icons and restarts Windows Explorer to apply the changes immediately.
 
 # Features:
 "Ctrl + Alt + ;"  to toggle the visibility of desktop icons.
