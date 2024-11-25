@@ -12,6 +12,7 @@ Modifies the registry key HideIcons in the Windows registry to control icon visi
 Restarts Windows Explorer for the changes to take effect immediately.
 # How to Use:
 First download AutoHotkey https://www.autohotkey.com/, move `ToggleIcons.ahk` to desktop. Open that file and then use shortcut below.
+For a better functioning u can open by `Win + r` a `shel.startup` and copy `.ahk` file to have AutoHotkey always on start open.
 
 Press Ctrl + Alt + ; to hide or show the desktop icons.
 
