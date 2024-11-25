@@ -11,7 +11,7 @@ allows you to toggle the visibility of desktop icons with keyboard shortcuts. It
 Modifies the registry key HideIcons in the Windows registry to control icon visibility.
 Restarts Windows Explorer for the changes to take effect immediately.
 # How to Use:
-First download AutoHotkey ![link](https://www.autohotkey.com/), move `ToggleIcons.ahk` to desktop. Open that file and then use shortcut below.
+First download AutoHotkey !(https://www.autohotkey.com/), move `ToggleIcons.ahk` to desktop. Open that file and then use shortcut below.
 
 Press Ctrl + Alt + ; to hide or show the desktop icons.
 
